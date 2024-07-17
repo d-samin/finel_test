@@ -7,19 +7,19 @@
 string[] FormNewArray(string[] str)
 {
     int count = 0;
-    foreach (string s in str)
+    for(int i=0; i <str.Length; i++ )
     {
-        if (s.Length <= 3)
+        if (str[i].Length <= 3)
             count++;
     }
 
     int index = 0;
     string[] result = new string[count];
-    foreach (string s in str)
+    for(int i=0; i <str.Length; i++ )
     {
-       if (s.Length <= 3)
+       if (str[i].Length <= 3)
         {
-            result[index] = s;
+            result[index] = str[i];
             index++;
         }
     }
