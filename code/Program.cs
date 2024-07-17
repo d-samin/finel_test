@@ -13,14 +13,13 @@ string[] FormNewArray(string[] str)
             count++;
     }
 
-    int index = 0;
     string[] result = new string[count];
     for(int i=0; i <str.Length; i++ )
     {
        if (str[i].Length <= 3)
         {
-            result[index] = str[i];
-            index++;
+            result[i] = str[i];
+            i++;
         }
     }
     return result;
